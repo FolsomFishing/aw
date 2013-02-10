@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="build" default="" basedir=".">
+    <description>
+       Synchronize the Eclipse folders and the web site folders
+    </description>    
+    <!-- Relative location of eclipse folder -->
+    <property name="eclipse" value="." />
+    <!-- Absolute location of web site folder -->
+    <property name="website" value="C:/Program Files (x86)/Apache Software Foundation/Apache2.2/htdocs/" />
+
+    <!-- Copy new web site files -->
+    <copy todir="${website}">
+        <fileset file="${eclipse}/*.*"/>
+    </copy>   
+</project>
